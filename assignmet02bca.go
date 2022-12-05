@@ -60,7 +60,7 @@ func addnewNode(a string) {
 
 	}
 }
-func client(a string) {
+func Client(a string) {
 	println("Client-> ", a, "connected")
 	conn, err := net.Dial("tcp", "localhost:8080")
 	if err != nil {
@@ -84,7 +84,7 @@ func client(a string) {
 	nodes = append(nodes, node)
 
 }
-func server() {
+func Server() {
 	ln, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		log.Fatal(err)
