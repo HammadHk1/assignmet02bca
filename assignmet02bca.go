@@ -42,7 +42,7 @@ var nodes []BootStrapNode
 // 	addnewNode("N")
 // }
 
-func addnewNode(a string) {
+func AddnewNode(a string) {
 	var hashtable = []Hashable{}
 	var i int
 	var newBlock = Block(a)
